@@ -4,7 +4,8 @@ from enum import IntEnum
 from typing import Callable, Any
 
 # Load the shared library
-_lib = ctypes.CDLL("./librkllmrt.so")  # Adjust the library name if necessary
+# _lib = ctypes.CDLL("./librkllmrt.so")  # Adjust the library name if necessary
+_lib = ctypes.CDLL("/usr/lib/librkllmrt.so")
 
 # Define enums
 class LLMCallState(IntEnum):
